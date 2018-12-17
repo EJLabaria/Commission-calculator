@@ -14,16 +14,18 @@
 # if, elif, else
 
 print("What's your current level?")
+
 title = input()
+
 print(title + "! Very nice :) ")
 
-if title = TE:
+if title == 'TE':
   #TE end
-elif title = TR:
+elif title == 'TR':
   #TR end
-elif title = SR:
+elif title == 'SR':
   #SR end
-elif title = PR:
+elif title == 'PR':
   #PR end
 else:
   print('You f*ck up! Try again buddy :)')
