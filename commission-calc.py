@@ -19,6 +19,7 @@ title = input()
 
 print(title + "! Very nice :) ")
 
+#while // else statement needs to loop//
 if title == 'TE':
   #TE end
 elif title == 'TR':
