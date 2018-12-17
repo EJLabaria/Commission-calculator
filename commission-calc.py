@@ -20,7 +20,7 @@ title = input()
 
 print(title + "! Very nice :) ")
 
-#while // else statement needs to loop//
+# (1) check while loop (2) find more efficent way (DB store, each profile)
 while x != 1:
   if title == 'TE':
     x = x + 1
