@@ -10,30 +10,58 @@
 # TR = 65, 7.5%
 # SR = 75, 12.5%
 # PR = 85, 12.5%
-x = 0
 
-# if, elif, else
 
-print("What's your current level?")
+TE = 55 
+TEcom = 0.075 #7.5%
 
-title = input()
+TR = 65
+TRcom = 0.075 #7.5%
 
-print(title + "! Very nice :) ")
+SR = 75
+SRcom = 0.125 #12.5%
 
-# (1) check while loop (2) find more efficent way (DB store, each profile)
-while x != 1:
-  if title == 'TE':
-    x = x + 1
-    #TE end
-  elif title == 'TR':
-    x = x + 1
-    #TR end
-  elif title == 'SR':
-    x = x + 1
-    #SR end
-  elif title == 'PR':
-    x = x + 1
-    #PR end
-  else:
-    print('You f*ck up! Try again buddy :)')
+PR = 85
+PRcom = 0.125 #12.5%
+
+print ("What is your first name?")
+name = input()
+
+
+while True:
+    print('What is your title?')
     title = input()
+    if title == 'TE' :
+        break
+    elif title == 'TR' :
+        break
+    elif title == 'SR' :
+        break
+    elif title == 'PR' :
+        break
+    else:
+        print('\n')
+        print(title + "? That's not an option, try again!")
+        print('\n')
+
+print("Thank's "  + name + "! You're currently a " + title)
+print('\n')
+
+print("How many hire's do you currently have?")
+hires = input()
+
+i = int(hires)
+
+print(str(i) + " hires, NICE!")
+
+#print('what the amount of your first hire? xx,xxx')
+#FirstHire = input()
+#ValFirstHire = int(FirstHire)
+
+x = [0] * int(hires)
+
+y = 0
+while y < i :
+    print (y)
+    y += 1
+
