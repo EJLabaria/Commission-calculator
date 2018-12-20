@@ -62,6 +62,7 @@ x = [0] * int(hires)
 
 y = 0
 while y < i :
-    print (y)
+    x[y] = int(input())
+    #print (y)
     y += 1
 
