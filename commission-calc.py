@@ -86,9 +86,37 @@ qreduce = 0
 j = 0
 
 while j < i :
-  if q[qreduce] == 0:
+  if q[j] == 0:
     qreduce += 1
     j += 1 
   else:
     j+=1
 
+    #qtotal = 0 #total of q = recruter only
+#ztotal = 0 #total of z = AM & recruiter
+#xtotal = 0 #total of x = grand total
+
+qtotal = sum(q)
+ztotal = sum(z)
+xtotal = sum(x)
+
+qcom = [0] * i
+zcom = [0] * i
+qcomtotal = 0
+zcomtotal = 0
+totalcom = 0
+
+j = 0
+
+while j < i:
+  qcom[j] = q[j] * TRcom
+  zcom[j] = z[j] * TRcom * 2
+  j+=1
+
+qcomtotal = sum(qcom)
+zcomtotal = sum(zcom)
+
+totalcom = qcomtotal + zcomtotal
+
+print("Pre tax = $" + str(totalcom))
+print("Post tax = $" +str(totalcom*.75) )
