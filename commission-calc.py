@@ -58,10 +58,37 @@ print(str(i) + " hires, NICE!")
 #FirstHire = input()
 #ValFirstHire = int(FirstHire)
 
-x = [0] * int(hires)
+#x = hire list, creates matrix
+x = [0] * int(hires) 
+q = [0] * int(hires) #recruiter only
+z = [0] * int(hires) #recruiter and AM
 
-y = 0
+y = 0 #loop to take in hires
+#am_recQ = takes in answer for AM/REC only or both
+
 while y < i :
-    print (y)
+    print ('How much was hire #'+ str(y+1) )
+    x[y] = int(input())
+    print('Are you AM AND recruiter? (yes or no)')
+    am_recQ = input()
+    if am_recQ == 'yes':
+      z[y] = x[y]
+    elif am_recQ == 'no':
+      q[y] = x[y]
+      #else:
+        #print('try again')
     y += 1
+#****run backend calculations****
+
+
+#clean up q array and z array of zeros
+qreduce = 0 
+j = 0
+
+while j < i :
+  if q[qreduce] == 0:
+    qreduce += 1
+    j += 1 
+  else:
+    j+=1
 
